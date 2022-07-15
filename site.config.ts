@@ -57,7 +57,7 @@ export default siteConfig({
       pageId: 'c04740c7863b40f0b183b6b62818fbfa'
     }, {
       title: "Interview 🎙️",
-      pageId: '901dc03f3b79441da28e19b808f1fc27'
+      pageId: 'Interview-4a5685991d47471bb09701bd9f0e1cb2'
     },
     {
       title: 'Awesome Tools 🔧',
