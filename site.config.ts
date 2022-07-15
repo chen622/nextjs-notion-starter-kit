@@ -1,8 +1,8 @@
-import { siteConfig } from './lib/site-config'
+import {siteConfig} from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '4268ab8f0e3448dbbceb522ec9f456a1',
+  rootNotionPageId: 'c04740c7863b40f0b183b6b62818fbfa',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -10,11 +10,11 @@ export default siteConfig({
 
   // basic site info (required)
   name: '闪念胶囊',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  domain: 'notion.ccm.ink',
   author: 'Chenming C',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: '这里是 Chenming C 的个人博客 「闪念胶囊」，用于记录他脑子中保存不住的知识。',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
@@ -49,16 +49,19 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  //navigationStyle: 'default',
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: "Home 🏠",
+      pageId: 'c04740c7863b40f0b183b6b62818fbfa'
+    }, {
+      title: "Interview 🎙️",
+      pageId: '901dc03f3b79441da28e19b808f1fc27'
+    },
+    {
+      title: 'Awesome Tools 🔧',
+      pageId: 'Awesome-Tools-3a43edca524f48f28fc21ed667392445'
+    }
+  ]
 })

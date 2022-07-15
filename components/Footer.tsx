@@ -1,14 +1,14 @@
 import * as React from 'react'
-import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
-import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
-import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
-import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
-import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
-import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
-import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
-import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
+import {FaTwitter} from '@react-icons/all-files/fa/FaTwitter'
+import {FaZhihu} from '@react-icons/all-files/fa/FaZhihu'
+import {FaGithub} from '@react-icons/all-files/fa/FaGithub'
+import {FaLinkedin} from '@react-icons/all-files/fa/FaLinkedin'
+import {FaEnvelopeOpenText} from '@react-icons/all-files/fa/FaEnvelopeOpenText'
+import {FaYoutube} from '@react-icons/all-files/fa/FaYoutube'
+import {IoSunnyOutline} from '@react-icons/all-files/io5/IoSunnyOutline'
+import {IoMoonSharp} from '@react-icons/all-files/io5/IoMoonSharp'
 
-import { useDarkMode } from 'lib/use-dark-mode'
+import {useDarkMode} from 'lib/use-dark-mode'
 import * as config from 'lib/config'
 
 import styles from './styles.module.css'
@@ -17,7 +17,7 @@ import styles from './styles.module.css'
 
 export const FooterImpl: React.FC = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
-  const { isDarkMode, toggleDarkMode } = useDarkMode()
+  const {isDarkMode, toggleDarkMode} = useDarkMode()
 
   const onToggleDarkMode = React.useCallback(
     (e) => {
@@ -33,21 +33,9 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright 2022 {config.author}</div>
-
-      <div className={styles.settings}>
-        {hasMounted && (
-          <a
-            className={styles.toggleDarkMode}
-            href='#'
-            role='button'
-            onClick={onToggleDarkMode}
-            title='Toggle dark mode'
-          >
-            {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
-          </a>
-        )}
+      <div className={styles.copyright}><a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">津 ICP 备 19011286 号</a>
       </div>
+      <div className={styles.copyright}>Copyright © 2019-2022 闪念胶囊</div>
 
       <div className={styles.social}>
         {config.twitter && (
@@ -58,7 +46,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaTwitter />
+            <FaTwitter/>
           </a>
         )}
 
@@ -70,7 +58,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaZhihu />
+            <FaZhihu/>
           </a>
         )}
 
@@ -82,7 +70,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaGithub />
+            <FaGithub/>
           </a>
         )}
 
@@ -94,7 +82,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaLinkedin />
+            <FaLinkedin/>
           </a>
         )}
 
@@ -106,7 +94,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaEnvelopeOpenText />
+            <FaEnvelopeOpenText/>
           </a>
         )}
 
@@ -118,7 +106,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaYoutube />
+            <FaYoutube/>
           </a>
         )}
       </div>
