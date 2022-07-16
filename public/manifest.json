@@ -1,12 +1,7 @@
 {
-  "name": "Transitive Bullshit",
-  "short_name": "Transitive BS",
+  "name": "Chenming C's 闪念胶囊",
+  "short_name": "闪念胶囊",
   "icons": [
-    {
-      "src": "/favicon-16x16.png",
-      "type": "image/png",
-      "sizes": "16x16"
-    },
     {
       "src": "/favicon-32x32.png",
       "type": "image/png",
@@ -18,18 +13,23 @@
       "sizes": "96x96"
     },
     {
+      "src": "/favicon-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/favicon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
       "src": "/apple-touch-icon.png",
       "type": "image/png",
-      "sizes": "180x180"
+      "sizes": "192x192"
     },
     {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
+      "src": "/android-chrome-400x400.png",
+      "sizes": "400x400",
       "type": "image/png"
     }
   ],
