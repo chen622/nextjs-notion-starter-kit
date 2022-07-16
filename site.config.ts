@@ -42,7 +42,7 @@ export default siteConfig({
   // example:
   //
   pageUrlOverrides: {
-    '/interview': 'interview-901dc03f3b79441da28e19b808f1fc27',
+    '/interview': 'Interview-4a5685991d47471bb09701bd9f0e1cb2',
     '/awesome-tools': 'Awesome-Tools-3a43edca524f48f28fc21ed667392445'
   },
   // pageUrlOverrides: null,
@@ -60,7 +60,7 @@ export default siteConfig({
       pageId: 'Interview-4a5685991d47471bb09701bd9f0e1cb2'
     },
     {
-      title: 'Awesome Tools 🔧',
+      title: 'Tools 🔧',
       pageId: 'Awesome-Tools-3a43edca524f48f28fc21ed667392445'
     }
   ]
