@@ -56,10 +56,10 @@ export default siteConfig({
       title: "Home 🏠",
       pageId: 'c04740c7863b40f0b183b6b62818fbfa'
     },
-    {
-      title: "Interview 🎙️",
-      pageId: 'Interview-4a5685991d47471bb09701bd9f0e1cb2'
-    },
+    // {
+    //   title: "Interview 🎙️",
+    //   pageId: 'Interview-4a5685991d47471bb09701bd9f0e1cb2'
+    // },
     {
       title: 'Tools 🔧',
       pageId: 'Awesome-Tools-3a43edca524f48f28fc21ed667392445'
