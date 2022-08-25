@@ -9,7 +9,7 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: '闪念胶囊',
+  name: '晨茗的闪念胶囊',
   domain: 'notion.ccm.ink',
   author: 'Chenming C',
 
