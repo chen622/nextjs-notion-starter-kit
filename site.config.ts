@@ -1,4 +1,4 @@
-import {siteConfig} from './lib/site-config'
+import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
@@ -20,6 +20,7 @@ export default siteConfig({
   // twitter: 'transitive_bs',
   github: 'chen622',
   // linkedin: 'fisch2',
+  // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
