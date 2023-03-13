@@ -1,15 +1,15 @@
 import * as React from 'react'
-import {FaTwitter} from '@react-icons/all-files/fa/FaTwitter'
-import {FaZhihu} from '@react-icons/all-files/fa/FaZhihu'
+import {FaEnvelopeOpenText} from '@react-icons/all-files/fa/FaEnvelopeOpenText'
 import {FaGithub} from '@react-icons/all-files/fa/FaGithub'
 import {FaLinkedin} from '@react-icons/all-files/fa/FaLinkedin'
-import {FaEnvelopeOpenText} from '@react-icons/all-files/fa/FaEnvelopeOpenText'
+import {FaMastodon} from '@react-icons/all-files/fa/FaMastodon'
+import {FaTwitter} from '@react-icons/all-files/fa/FaTwitter'
 import {FaYoutube} from '@react-icons/all-files/fa/FaYoutube'
-//import {IoSunnyOutline} from '@react-icons/all-files/io5/IoSunnyOutline'
-//import {IoMoonSharp} from '@react-icons/all-files/io5/IoMoonSharp'
+import {FaZhihu} from '@react-icons/all-files/fa/FaZhihu'
+//import {IoMoonSharp} from '@react-icons/all-files/io5/IoMoonSharp'import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 
-// import {useDarkMode} from 'lib/use-dark-mode'
-import * as config from 'lib/config'
+import * as config from '@/lib/config'
+// import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
 
@@ -17,8 +17,8 @@ import styles from './styles.module.css'
 
 export const FooterImpl: React.FC = () => {
   // const [hasMounted, setHasMounted] = React.useState(false)
-  //const {isDarkMode, toggleDarkMode} = useDarkMode()
-
+  // const {isDarkMode, toggleDarkMode} = useDarkMode()
+  //
   // const onToggleDarkMode = React.useCallback(
   //   (e) => {
   //     e.preventDefault()
@@ -26,7 +26,7 @@ export const FooterImpl: React.FC = () => {
   //   },
   //   [toggleDarkMode]
   // )
-  //
+
   // React.useEffect(() => {
   //   setHasMounted(true)
   // }, [])
@@ -46,7 +46,18 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaTwitter/>
+            <FaTwitter />
+          </a>
+        )}
+
+        {config.mastodon && (
+          <a
+            className={styles.mastodon}
+            href={config.mastodon}
+            title={`Mastodon ${config.getMastodonHandle()}`}
+            rel='me'
+          >
+            <FaMastodon />
           </a>
         )}
 
@@ -58,7 +69,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaZhihu/>
+            <FaZhihu />
           </a>
         )}
 
@@ -70,7 +81,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaGithub/>
+            <FaGithub />
           </a>
         )}
 
@@ -82,7 +93,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaLinkedin/>
+            <FaLinkedin />
           </a>
         )}
 
@@ -94,7 +105,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaEnvelopeOpenText/>
+            <FaEnvelopeOpenText />
           </a>
         )}
 
@@ -106,7 +117,7 @@ export const FooterImpl: React.FC = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaYoutube/>
+            <FaYoutube />
           </a>
         )}
       </div>
