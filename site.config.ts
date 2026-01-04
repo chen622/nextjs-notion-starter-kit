@@ -14,7 +14,8 @@ export default siteConfig({
   author: 'Chenming C',
 
   // open graph metadata (optional)
-  description: '这里是 Chenming C 的个人博客 「闪念胶囊」，用于记录他脑子中保存不住的知识。',
+  description:
+    '这里是 Chenming C 的个人博客 「闪念胶囊」，用于记录他脑子中保存不住的知识。',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
@@ -54,7 +55,7 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: "Home 🏠",
+      title: 'Home 🏠',
       pageId: 'c04740c7863b40f0b183b6b62818fbfa'
     },
     // {

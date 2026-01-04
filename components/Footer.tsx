@@ -34,9 +34,14 @@ export function FooterImpl() {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}><a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">津ICP备19011286号-1</a>
+      <div className={styles.copyright}>
+        <a href='https://beian.miit.gov.cn/' target='_blank' rel='noreferrer'>
+          津ICP备19011286号-1
+        </a>
       </div>
-      <div className={styles.copyright}>Copyright © 2019-{new Date().getFullYear()} 闪念胶囊</div>
+      <div className={styles.copyright}>
+        Copyright © 2019-{new Date().getFullYear()} 闪念胶囊
+      </div>
 
       <div className={styles.settings}>
         {hasMounted && (
