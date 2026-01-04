@@ -3,6 +3,11 @@
   "short_name": "闪念胶囊",
   "icons": [
     {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
       "src": "/favicon-32x32.png",
       "type": "image/png",
       "sizes": "32x32"
@@ -21,16 +26,6 @@
       "src": "/favicon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/android-chrome-400x400.png",
-      "sizes": "400x400",
-      "type": "image/png"
     }
   ],
   "theme_color": "#000000",
